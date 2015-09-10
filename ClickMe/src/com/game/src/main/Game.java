@@ -25,7 +25,7 @@ public class Game extends Canvas implements Runnable {
 	public static int SCORE = 0;
 	public int time = 15;
 
-	public final String TITLE = "SPACE GAME";
+	public final String TITLE = "CLICK ME";
 
 	private Thread thread;
 
@@ -77,8 +77,8 @@ public class Game extends Canvas implements Runnable {
 
 	private void init() {
 		requestFocus();
-		BufferedImageLoader loader = new BufferedImageLoader();
 		try {
+			BufferedImageLoader loader = new BufferedImageLoader();
 			background = loader.loadImage("/background.gif");
 		} catch (IOException e) {
 			e.printStackTrace();
