@@ -174,7 +174,7 @@ public class Game extends Canvas implements Runnable {
 			g.setColor(Color.BLACK);
 			g.drawString("Score: " + Integer.toString(SCORE), 5, 20);
 			// for timer rendering
-			g.drawString("Time Left: " + Integer.toString(time), WIDTH*SCALE-120, 20);
+			g.drawString("Time Left: " + Integer.toString(time), WIDTH*SCALE-170, 20);
 			
 			if (time == 0) {
 				timer.stop();
